@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            border-radius: 50%; 
+            background-color: #ffe0e6; 
+            overflow: hidden;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .profile-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(10, 10, 10, 0.5); 
+            color: #ffe0e6; 
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.3s;
+            text-align: center;
+            height: 25%;
+        }
+
+        .profile-container:hover .profile-description {
+            opacity: 1;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="レオス拷貝.png" alt="Your Portrait" class="profile-image">
+        <div class="profile-description">
+            <p>Hello</p>
+        </div>
+    </div>
+    <img src="レオス拷貝.png" alt="Portrait" class="profile-image" usemap="#face-map">
+    
+    <map name="face-map">
+        <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="test03.html" alt="Face">
+    </map>
+</body>
+</html>

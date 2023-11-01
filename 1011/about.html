@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <style>
+            ul.navbar{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: #8ea7e9;
+                overflow: hidden;
+            }
+            ul.navbar li {
+            float: left;
+            }
+
+            ul.navbar li a {
+                display: block;
+                color: #e5e0ff; 
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            ul.navbar li a:hover {
+                background-color: #7286d3;
+                color: #fff2f2;
+            }
+
+            div.content{
+                overflow: auto;
+                resize:both;
+                background-color: #fff2f2;
+            }
+            .right{
+                float:right;
+                width:50%;
+                background-color: #8ea7e9;
+                /*text-align: center;*/
+                
+            }
+            .left{
+                float:left;
+                width:50%;
+                background-color: #e5e0ff;
+                text-align : center; 
+            }
+            
+            img{
+                border-radius: 50%;
+            }
+
+            ul.project {
+                list-style-type: none;
+                padding-left: 20px; /* Add some left padding to adjust spacing */
+            }
+
+            ul.project li {
+                position: relative;
+                padding-left: 30px; /* Add padding to the left of the list item text */
+            }
+
+            ul.project li:nth-child(1)::before {
+                content: "\2021"; /* Unicode bullet character • */
+                color: blue; /* Change the color of the first bullet */
+                position: absolute;
+                left: 0;
+            }
+
+            ul.project li:nth-child(2)::before {
+                content: "\2020"; /* Unicode bullet character • */
+                color: green; /* Change the color of the second bullet */
+                position: absolute;
+                left: 0;
+            }
+
+            ul.project li:nth-child(3)::before {
+                content: "•"; /* Unicode bullet character • */
+                color: red; /* Change the color of the third bullet */
+                position: absolute;
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="content">
+            <div class="left">
+                <a href="https://www.google.com/"><img src="images.jpg" alt="Avatar" title="證件照"></a>
+                <h1>Katherine Chang</h1>
+                <strong>Senior Student of Computer Seience</strong>
+                <p></p>
+                <strong_1>Email:</strong_1>
+                <a href="mailto: t109590450@ntut.org.tw">t109590450@ntut.org.tw</a>
+                <p></p>
+
+                <strong_1>School:</strong_1>
+                <a href="https://ntut.org.tw/">National Taipei University of Technology</a>
+                <br>
+                <p></p>
+                <a href="lab02.html">Back to beginning</a>
+   
+            </div>
+            <div class="right">
+                <h2 style="text-align: center;" id="top">Introduction</h2>
+                <a href="intro.html">Introduction page</a>
+                <hr style="border-width:3px;" color="black">
+                <h2 style="text-align: center;">EDUCATION</h2>
+                <h3>National Taipei University of Technology</h3>
+                <small>Taipei, Taiwan | September 2021 - Present</small>
+                <p>Bachelor of Science in Computer Science and Information Engineering</p>
+                <h3>Chang Gung University</h3>  
+                <small>Taoyuan, Taiwan | September 2020 - August 2021</small>  
+                <p>Bachelor of Information Management</p>
+                <p>GPA:3.8/4.0</p>    
+                <hr style="border-width:5px;" color="yellow">
+                <h2 style="text-align: center;">PROJECT</h2>
+                <h3>Beauty Online shop App</h3>
+                <small>Used Android Studio and Java | January 2022 - June 2022</small>
+                <ul class="project">
+                    <li>Designed the storefront to allow customers to swipe through products and click on labels
+                        to switch between categories</li>
+                    <li>Designed the function to turn the product page into the detail page and add it to the
+                        shopping cart so users can see the ingredients, price, and size before buying
+                        </li>
+                    <li>Developed the shopping cart and checkout process to ensure customers complete their
+                        purchases and provide accurate information</li>
+
+                </ul>
+
+                <hr style="border-width:10px;" color="white">
+
+                <h2 style="text-align: center;">HONORS & LEADERSHIP</h2>
+                <ol>
+                    <li>Public Relations Officer, Student Association of Computer Science and Information
+                        Engineering Department</li>
+                    <li>Academic Excellence Scholarship, Chang Gung University</li>
+                    <li>Class President, Chang Gung University Department of Information Management</li>
+                </ol>
+                <a href="#top">回到最頂端</a>
+
+                
+            </div>
+        </div>
+    </body>
+    
+</html>

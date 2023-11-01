@@ -1,0 +1,78 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h2>Task 1 : 九九乘法表</h2>
+        <table border="1">
+            <script>
+                var i,j;
+                for (i=1 ; i<=9 ; i++){
+                    //document.write("<td><b>" + i + "</b></td>");
+                    j = 1;
+                    while (j <= 9){
+                        document.write("<td>");
+                        document.write(i + "*" + j + "=" + i*j);
+                        document.write("</td>");
+                        j++;
+                    }
+                    document.write("<tr>");
+                }
+            </script>
+        </table>
+        <br>
+        <table border="1">
+            <script>
+                var i,j;
+                for (i=1 ; i<=9 ; i++){
+                    //document.write("<td><b>" + i + "</b></td>");
+                    j = 1;
+                    while (j <= 9){
+                        document.write("<td>");
+                        document.write(j + "*" + i + "=" + i*j);
+                        document.write("</td>");
+                        j++;
+                    }
+                    document.write("<tr>");
+                }
+            </script>
+        </table>
+        <br>
+
+        <hr>
+        <h2>Task 2</h2>
+        <p>Hello!</p>
+        <p id="text2">Nice to meet you!</p>
+        <img src="images.jpg" id="panda">
+        <br>
+        <button type="button" onclick="AddBorder()">Add Border</button>
+        <button type="button" onclick="ChangeColor()">Change Color</button>
+
+        <script>
+            function AddBorder(){
+                document.getElementById("panda").style.border = "thick double";
+            }
+            function ChangeColor(){
+                changecolor = document.getElementById("text2");
+                changecolor.style.color = "blue";
+                changecolor.style.fontSize = "larger";
+            }
+        </script>
+        <br>
+
+        <hr>
+
+        <h2>Task 3 : Canvas</h2>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            const ctx2 = canvas.getContext("2d");
+            
+            ctx.fillStyle = "rgba(0,0,255,0.5)";
+            ctx.fillRect(0,0,100,50);
+            ctx2.fillStyle = "rgba(255,0,0,0.5)";
+            ctx2.fillRect(50,25,100,50);
+        </script>
+    </body>
+</html>
